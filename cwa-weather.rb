@@ -5,21 +5,21 @@
 class CwaWeather < Formula
   desc "CWA Open Data API CLI for Taiwan weather data"
   homepage "https://github.com/kerkerj/cwa-weather"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kerkerj/cwa-weather/releases/download/v0.3.0/cwa-weather_darwin_amd64.tar.gz"
-      sha256 "1a28a152139b725b8726a21ff5c7dc56bd583cfbdf685536386e44beaf24328a"
+      url "https://github.com/kerkerj/cwa-weather/releases/download/v0.3.1/cwa-weather_darwin_amd64.tar.gz"
+      sha256 "afa2725c936070f4c3ca16c5c36b4eb8f0d6fe4eb8b7065121dc95533190b82f"
 
       define_method(:install) do
         bin.install "cwa-weather"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kerkerj/cwa-weather/releases/download/v0.3.0/cwa-weather_darwin_arm64.tar.gz"
-      sha256 "7a4aff0d845afc89a841be58104b4f2cc5e131ca9d15fdd7aac3b3c0e20fc8d7"
+      url "https://github.com/kerkerj/cwa-weather/releases/download/v0.3.1/cwa-weather_darwin_arm64.tar.gz"
+      sha256 "37dd9ab8b5d7b3f43477697d108014ee1b0bb2b2f1d9c36260bbc3d137d69a45"
 
       define_method(:install) do
         bin.install "cwa-weather"
@@ -29,15 +29,15 @@ class CwaWeather < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kerkerj/cwa-weather/releases/download/v0.3.0/cwa-weather_linux_amd64.tar.gz"
-      sha256 "7a37844104b7234a71d49400f8d47404e5ba90809683067b978cbb36ae1ad142"
+      url "https://github.com/kerkerj/cwa-weather/releases/download/v0.3.1/cwa-weather_linux_amd64.tar.gz"
+      sha256 "6898fcdbd3eec6274969511ed180ce602271013da17e3bb39f9577355db28cee"
       define_method(:install) do
         bin.install "cwa-weather"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kerkerj/cwa-weather/releases/download/v0.3.0/cwa-weather_linux_arm64.tar.gz"
-      sha256 "f7284815281f4808c3e17a3e9814492f8726c0604a490fbbc7e61bc006e2da39"
+      url "https://github.com/kerkerj/cwa-weather/releases/download/v0.3.1/cwa-weather_linux_arm64.tar.gz"
+      sha256 "04e5d29bd916405fcfb9442d5fa58d2e74b8663b4d15a4ca1884420baa894a6f"
       define_method(:install) do
         bin.install "cwa-weather"
       end
